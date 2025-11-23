@@ -1,0 +1,28 @@
+[README.txt](https://github.com/user-attachments/files/23694256/README.txt)
+
+README — Каталог погрузчиков (статический сайт)
+Файлы:
+- index.html — главная страница каталога
+- styles.css — стили
+- script.js — логика загрузки и фильтров
+- products.json — данные о товарах (JSON)
+- README.txt — этот файл
+
+Как использовать:
+1) Распакуйте архив и поместите файлы на любой статический хостинг:
+   - GitHub Pages, Netlify, Vercel, или просто в папку веб-сервера (nginx, Apache).
+2) Чтобы изменить товары, откройте products.json и отредактируйте/добавьте записи.
+   Поля: id, title, capacity_kg, fuel, mast_height_mm, price, image, description
+3) Чтобы заменить контакты — найдите адреса в index.html и script.js (info@example.com).
+4) Для добавления страниц товара вместо модального окна — можно создать product.html?id=ID и
+   подключить тот же products.json, или настроить routing на сервере.
+
+Деплой на GitHub Pages (кратко):
+- Создайте репозиторий, загрузите содержимое папки как ветку main,
+- В настройках репозитория включите GitHub Pages (Source: main branch / root).
+- Через минуту сайт будет доступен по адресу: https://<ваш-пользователь>.github.io/<репозиторий>
+
+Если хотите, могу:
+- генерировать больше примеров товаров,
+- превращать это в адаптивный шаблон для WordPress / Shopify,
+- или сгенерировать готовый Dockerfile/nginx конфиг для быстрого запуска.
